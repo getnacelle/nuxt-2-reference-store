@@ -1,29 +1,29 @@
-import { buildRoutes } from "./utils/buildRoutes";
+import { buildRoutes } from './utils/buildRoutes';
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "nuxt-2",
+    title: 'nuxt-2',
     htmlAttrs: {
-      lang: "en",
+      lang: 'en'
     },
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
-      { name: "format-detection", content: "telephone=no" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
+      { name: 'format-detection', content: 'telephone=no' }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/nacelle-sdk.js", "~/plugins/nuxt-client-init.client.js"],
+  plugins: ['~/plugins/nacelle-sdk.js', '~/plugins/nuxt-client-init.client.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -31,31 +31,31 @@ export default {
   // Nuxt image component: https://image.nuxtjs.org/
   image: {
     domains: [
-      "https://cdn.shopify.com",
-      "https://cdn.accentuate.io",
-      "https://images.ctfassets.net",
-    ],
+      'https://cdn.shopify.com',
+      'https://cdn.accentuate.io',
+      'https://images.ctfassets.net'
+    ]
   },
 
   publicRuntimeConfig: {
     nacelle: {
       storefrontEndpoint: process.env.NACELLE_STOREFRONT_ENDPOINT,
       token: process.env.NACELLE_STOREFRONT_TOKEN,
-      locale: process.env.NACELLE_STOREFRONT_LOCALE,
+      locale: process.env.NACELLE_STOREFRONT_LOCALE
     },
     shopify: {
       storefrontCheckoutToken: process.env.SHOPIFY_STOREFRONT_CHECKOUT_TOKEN,
       myshopifyDomain: process.env.MYSHOPIFY_DOMAIN,
-      storefrontApiVersion: process.env.STOREFRONT_API_VERSION,
-    },
+      storefrontApiVersion: process.env.STOREFRONT_API_VERSION
+    }
   },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    "@nuxtjs/eslint-module",
-    "@nuxt/image",
-    "@nuxtjs/pwa",
+    '@nuxtjs/eslint-module',
+    '@nuxt/image',
+    '@nuxtjs/pwa'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -64,14 +64,14 @@ export default {
   generate: {
     crawler: false,
     fallback: true,
-    routes: () => buildRoutes(),
+    routes: () => buildRoutes()
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: "en",
-    },
+      lang: 'en'
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -80,7 +80,7 @@ export default {
   vue: {
     config: {
       productionTip: false,
-      devtools: true,
-    },
-  },
+      devtools: true
+    }
+  }
 };
