@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'CartComponent',
+  name: 'SiteCart',
   props: {
     content: {
       type: Object,

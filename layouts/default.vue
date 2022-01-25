@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+// import { mapGetters } from 'vuex';
 
-import SiteHeader from '~/components/site/Header.vue';
-import SiteCart from '~/components/site/Cart.vue';
-import SiteNewsletter from '~/components/site/Newsletter.vue';
-import SiteFooter from '~/components/site/Footer.vue';
+import SiteHeader from '~/components/header/Header.vue';
+import SiteCart from '~/components/cart/Cart.vue';
+import SiteNewsletter from '~/components/newsletter/Newsletter.vue';
+import SiteFooter from '~/components/footer/Footer.vue';
 
 export default {
   name: 'DefaultLayout',
@@ -24,8 +24,16 @@ export default {
     SiteNewsletter,
     SiteFooter
   },
-  computed: {
-    ...mapGetters('site', ['siteComponents'])
-  }
+  // computed: {
+  //   ...mapGetters('site', ['siteComponents'])
+  // },
+  data: () => ({
+    siteComponents: {
+      header: require('~/data/component-header.json'),
+      cart: require('~/data/component-cart.json'),
+      newsletter: require('~/data/component-newsletter.json'),
+      footer: require('~/data/component-footer.json')
+    }
+  })
 };
 </script>

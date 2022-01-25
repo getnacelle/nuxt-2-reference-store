@@ -1,0 +1,495 @@
+{
+  "createdAt": 1633450917,
+  "fields": {
+    "articleLists": null,
+    "featuredMedia": null,
+    "relatedArticles": null,
+    "description": null,
+    "tags": null,
+    "collectionHandle": null,
+    "content": null,
+    "contentHtml": null,
+    "excerpt": null,
+    "blogHandle": null,
+    "publishDate": null,
+    "author": null,
+    "primary": {
+      "navigation": [
+        {
+          "_key": "6b9050f35918",
+          "_type": "mega",
+          "callouts": [
+            {
+              "_key": "312e9d28897e",
+              "image": {
+                "_type": "typeImage",
+                "file": {
+                  "_type": "image",
+                  "asset": {
+                    "_createdAt": "2021-10-05T16:28:34Z",
+                    "_id": "image-6635a4e21ec43ca802c189ec85656e3132d413e6-1280x1280-jpg",
+                    "_rev": "gAYOJ6htLNl72m6bwCFinE",
+                    "_type": "sanity.imageAsset",
+                    "_updatedAt": "2021-10-05T16:28:34Z",
+                    "assetId": "6635a4e21ec43ca802c189ec85656e3132d413e6",
+                    "extension": "jpg",
+                    "metadata": {
+                      "_type": "sanity.imageMetadata",
+                      "dimensions": {
+                        "_type": "sanity.imageDimensions",
+                        "aspectRatio": 1,
+                        "height": 1280,
+                        "width": 1280
+                      },
+                      "hasAlpha": false,
+                      "isOpaque": true,
+                      "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAcBAgUG/8QAJxAAAgEEAAUDBQAAAAAAAAAAAQIDAAQFEQYHEiFRE0FhCBUiNOH/xAAYAQACAwAAAAAAAAAAAAAAAAACAwABBP/EABoRAQADAQEBAAAAAAAAAAAAAAEAAhExIYH/2gAMAwEAAhEDEQA/AK/xgjfZLvUhjXp2WB129+9eF5YcV2kuLuLKW5e4e2nZQzHqIT2J+K5f1CZq8ngxvDmMkKS3z9UxU60g+fFY5W8rrjD42bJ2uQS4a4B6UI7Oo/tIu46dmigNctzeywoDIgZW/EjtqlaYt2NhCHVFcLph4NKM9iXxyQDjaZ8ok15dfsunpeovYhfA8VceAYVteGMdFDsItumhv4pSquAEOqu/J247eMgnRGzs6NKUqHIDP//Z",
+                      "palette": {
+                        "_type": "sanity.imagePalette",
+                        "darkMuted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#39424e",
+                          "foreground": "#fff",
+                          "population": 0.12,
+                          "title": "#fff"
+                        },
+                        "darkVibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#523426",
+                          "foreground": "#fff",
+                          "population": 1.58,
+                          "title": "#fff"
+                        },
+                        "dominant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#d9b9a3",
+                          "foreground": "#000",
+                          "population": 3.75,
+                          "title": "#fff"
+                        },
+                        "lightMuted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#d4bbb4",
+                          "foreground": "#000",
+                          "population": 0.1,
+                          "title": "#fff"
+                        },
+                        "lightVibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#d9b9a3",
+                          "foreground": "#000",
+                          "population": 3.75,
+                          "title": "#fff"
+                        },
+                        "muted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#a57556",
+                          "foreground": "#fff",
+                          "population": 1.69,
+                          "title": "#fff"
+                        },
+                        "vibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#d1a282",
+                          "foreground": "#000",
+                          "population": 3.55,
+                          "title": "#fff"
+                        }
+                      }
+                    },
+                    "mimeType": "image/jpeg",
+                    "originalFilename": "mega-menu-category-01.jpg",
+                    "path": "images/9kpbh8wj/production/6635a4e21ec43ca802c189ec85656e3132d413e6-1280x1280.jpg",
+                    "sha1hash": "6635a4e21ec43ca802c189ec85656e3132d413e6",
+                    "size": 90287,
+                    "uploadId": "G8qfd7OXAlQJF3yGNsYFvSik0kIatnNi",
+                    "url": "https://cdn.sanity.io/images/9kpbh8wj/production/6635a4e21ec43ca802c189ec85656e3132d413e6-1280x1280.jpg",
+                    "_depth": 1
+                  }
+                }
+              },
+              "text": "Filomena Shirt",
+              "url": "/products/filomena-shirt"
+            },
+            {
+              "_key": "1b83252f3132",
+              "image": {
+                "_type": "typeImage",
+                "file": {
+                  "_type": "image",
+                  "asset": {
+                    "_createdAt": "2021-10-05T16:29:00Z",
+                    "_id": "image-29e98886576b7aa88aa6d169d38e14876430fb98-1280x1280-jpg",
+                    "_rev": "Rfna04Xn7gw6L6Gee9QlJ9",
+                    "_type": "sanity.imageAsset",
+                    "_updatedAt": "2021-10-05T16:29:00Z",
+                    "assetId": "29e98886576b7aa88aa6d169d38e14876430fb98",
+                    "extension": "jpg",
+                    "metadata": {
+                      "_type": "sanity.imageMetadata",
+                      "dimensions": {
+                        "_type": "sanity.imageDimensions",
+                        "aspectRatio": 1,
+                        "height": 1280,
+                        "width": 1280
+                      },
+                      "hasAlpha": false,
+                      "isOpaque": true,
+                      "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAcFCAb/xAAmEAABBAECBQUBAAAAAAAAAAABAAIDBBEFBgcSISIxE0FCUXGR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAgQFA//EABwRAAICAwEBAAAAAAAAAAAAAAADAQIUITJhMf/aAAwDAQACEQMRAD8AvN/VatF7G2XljT058dB+lYjd+aC68arbYMg+bh2/1blmtFPWkgmaHRuGDkZXNm7KMmkbht1ZM9ryWn7B8JJzrr3A0pVb6ktU3FDa0Mz433XOcw4JEZIyignrxkDna3IGPCLPM8DxfTqib3/VEOPkTIdaoyxjD5I+4/eERE/kFHR4XSYWTVOeQZcXHqiIplp2UI+H/9k=",
+                      "palette": {
+                        "_type": "sanity.imagePalette",
+                        "darkMuted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#795e3c",
+                          "foreground": "#fff",
+                          "population": 0.65,
+                          "title": "#fff"
+                        },
+                        "darkVibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#7e4e14",
+                          "foreground": "#fff",
+                          "population": 0,
+                          "title": "#fff"
+                        },
+                        "dominant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#967344",
+                          "foreground": "#fff",
+                          "population": 2.91,
+                          "title": "#fff"
+                        },
+                        "lightMuted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#c3af91",
+                          "foreground": "#000",
+                          "population": 0.45,
+                          "title": "#fff"
+                        },
+                        "lightVibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#dbcab0",
+                          "foreground": "#000",
+                          "population": 0.92,
+                          "title": "#000"
+                        },
+                        "muted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#967344",
+                          "foreground": "#fff",
+                          "population": 2.91,
+                          "title": "#fff"
+                        },
+                        "vibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#9c6434",
+                          "foreground": "#fff",
+                          "population": 0.01,
+                          "title": "#fff"
+                        }
+                      }
+                    },
+                    "mimeType": "image/jpeg",
+                    "originalFilename": "mega-menu-category-02.jpg",
+                    "path": "images/9kpbh8wj/production/29e98886576b7aa88aa6d169d38e14876430fb98-1280x1280.jpg",
+                    "sha1hash": "29e98886576b7aa88aa6d169d38e14876430fb98",
+                    "size": 75207,
+                    "uploadId": "4bdoP7ellhPGjj9vTZn9x87cQQzleHc6",
+                    "url": "https://cdn.sanity.io/images/9kpbh8wj/production/29e98886576b7aa88aa6d169d38e14876430fb98-1280x1280.jpg",
+                    "_depth": 1
+                  }
+                }
+              },
+              "text": "Emmeline Sweater",
+              "url": "/products/emmeline-sweater"
+            }
+          ],
+          "menus": [
+            {
+              "_key": "26e37aea5906",
+              "links": [
+                {
+                  "_key": "f3791a2ba473",
+                  "text": "Ilaria Dress",
+                  "url": "/products/ilaria-dress"
+                },
+                {
+                  "_key": "58f2b57c790a",
+                  "text": "Gina Crop Top",
+                  "url": "/products/gina-crop-top"
+                }
+              ],
+              "text": "Clothing"
+            },
+            {
+              "_key": "a7244661e2eb",
+              "links": [
+                {
+                  "_key": "9b7db62244c4",
+                  "text": "Giralda Bag",
+                  "url": "/products/giralda-bag"
+                },
+                {
+                  "_key": "fc02e5658172",
+                  "text": "Flavia Heel Sandals",
+                  "url": "/products/falvia-heal-sandals"
+                }
+              ],
+              "text": "Accessories"
+            }
+          ],
+          "text": "Womens"
+        },
+        {
+          "_key": "979fbf3c795b",
+          "_type": "mega",
+          "callouts": [
+            {
+              "_key": "63c246161add",
+              "image": {
+                "_type": "typeImage",
+                "file": {
+                  "_type": "image",
+                  "asset": {
+                    "_createdAt": "2021-10-05T18:01:14Z",
+                    "_id": "image-516d139dba5aca99384a822540f68e3abddbdefb-1720x960-jpg",
+                    "_rev": "gAYOJ6htLNl72m6bwCY4YS",
+                    "_type": "sanity.imageAsset",
+                    "_updatedAt": "2021-10-05T18:01:14Z",
+                    "assetId": "516d139dba5aca99384a822540f68e3abddbdefb",
+                    "extension": "jpg",
+                    "metadata": {
+                      "_type": "sanity.imageMetadata",
+                      "dimensions": {
+                        "_type": "sanity.imageDimensions",
+                        "aspectRatio": 1.7916666666666667,
+                        "height": 960,
+                        "width": 1720
+                      },
+                      "hasAlpha": false,
+                      "isOpaque": true,
+                      "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAwT/xAAhEAACAgICAQUAAAAAAAAAAAABAgMEABEFIRIGEzJBUf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEBAQEBAAAAAAAAAAAAAAAAABEBIf/aAAwDAQACEQMRAD8AolsmnYinZHkqfGSMDfiP3HVG7x91Vl4kS2O96iHakYj512iSZYyVBYb1lx6Ip16/GJLBEsckiAuVGvLJZ03dFzTwxqlupY90D6XfWGa2pXWYgMdYYqMf/9k=",
+                      "palette": {
+                        "_type": "sanity.imagePalette",
+                        "darkMuted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#3a352f",
+                          "foreground": "#fff",
+                          "population": 6.71,
+                          "title": "#fff"
+                        },
+                        "darkVibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#5e3e26",
+                          "foreground": "#fff",
+                          "population": 0,
+                          "title": "#fff"
+                        },
+                        "dominant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#3a352f",
+                          "foreground": "#fff",
+                          "population": 6.71,
+                          "title": "#fff"
+                        },
+                        "lightMuted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#c4bbb3",
+                          "foreground": "#000",
+                          "population": 4.01,
+                          "title": "#fff"
+                        },
+                        "lightVibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#f4ebe4",
+                          "foreground": "#000",
+                          "population": 0.11,
+                          "title": "#000"
+                        },
+                        "muted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#77726c",
+                          "foreground": "#fff",
+                          "population": 5.87,
+                          "title": "#fff"
+                        },
+                        "vibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#b57849",
+                          "foreground": "#fff",
+                          "population": 0,
+                          "title": "#fff"
+                        }
+                      }
+                    },
+                    "mimeType": "image/jpeg",
+                    "originalFilename": "product-page-04-detail-product-shot-01.jpg",
+                    "path": "images/9kpbh8wj/production/516d139dba5aca99384a822540f68e3abddbdefb-1720x960.jpg",
+                    "sha1hash": "516d139dba5aca99384a822540f68e3abddbdefb",
+                    "size": 96997,
+                    "uploadId": "ymDvlTvOLCCR9tjSQ7fZBOhAfEBsYpfd",
+                    "url": "https://cdn.sanity.io/images/9kpbh8wj/production/516d139dba5aca99384a822540f68e3abddbdefb-1720x960.jpg",
+                    "_depth": 1
+                  }
+                }
+              },
+              "text": "Douglas Duffel Bag",
+              "url": "/products/douglas-duffel-bag"
+            },
+            {
+              "_key": "44f8eb376f9b",
+              "image": {
+                "_type": "typeImage",
+                "file": {
+                  "_type": "image",
+                  "asset": {
+                    "_createdAt": "2021-10-05T18:01:29Z",
+                    "_id": "image-79dc7e0a2c7b80ce7f584678a5222994ed174de7-1280x1648-jpg",
+                    "_rev": "Rfna04Xn7gw6L6GeeA21Ed",
+                    "_type": "sanity.imageAsset",
+                    "_updatedAt": "2021-10-05T18:01:29Z",
+                    "assetId": "79dc7e0a2c7b80ce7f584678a5222994ed174de7",
+                    "extension": "jpg",
+                    "metadata": {
+                      "_type": "sanity.imageMetadata",
+                      "dimensions": {
+                        "_type": "sanity.imageDimensions",
+                        "aspectRatio": 0.7766990291262136,
+                        "height": 1648,
+                        "width": 1280
+                      },
+                      "hasAlpha": false,
+                      "isOpaque": true,
+                      "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAaABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUHBv/EACUQAAEDBAIBBAMAAAAAAAAAAAECAwQABQYRBxJBFCExUSJhcf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABgRAQADAQAAAAAAAAAAAAAAAAABAhEh/9oADAMBAAIRAxEAPwCuZTyhAsV8VbfSPyXGyErU34J8VvIclEuM083sBxIWAr2I391GsytVyRy1DmxLQqRCJR3c6/iD5J/lNeR8vuePXJhm3pS0hSO3dY2FH6FatnMSFXorN4LeZd6xqLNnsFuQsHeh7K/YorKtGRsaPxU45TwWflTkJVskNMhgK7BzzuqRRQJsQtr9oxyDAlrSt5hsJUpPwaKc0UH/2Q==",
+                      "palette": {
+                        "_type": "sanity.imagePalette",
+                        "darkMuted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#303a4c",
+                          "foreground": "#fff",
+                          "population": 1.73,
+                          "title": "#fff"
+                        },
+                        "darkVibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#1a1a6a",
+                          "foreground": "#fff",
+                          "population": 0,
+                          "title": "#fff"
+                        },
+                        "dominant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#303a4c",
+                          "foreground": "#fff",
+                          "population": 1.73,
+                          "title": "#fff"
+                        },
+                        "lightMuted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#acbccc",
+                          "foreground": "#000",
+                          "population": 0,
+                          "title": "#fff"
+                        },
+                        "lightVibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#f3f3fc",
+                          "foreground": "#000",
+                          "population": 0.72,
+                          "title": "#000"
+                        },
+                        "muted": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#717c88",
+                          "foreground": "#fff",
+                          "population": 0.02,
+                          "title": "#fff"
+                        },
+                        "vibrant": {
+                          "_type": "sanity.imagePaletteSwatch",
+                          "background": "#3232cc",
+                          "foreground": "#fff",
+                          "population": 0,
+                          "title": "#fff"
+                        }
+                      }
+                    },
+                    "mimeType": "image/jpeg",
+                    "originalFilename": "category-page-02-image-card-06.jpg",
+                    "path": "images/9kpbh8wj/production/79dc7e0a2c7b80ce7f584678a5222994ed174de7-1280x1648.jpg",
+                    "sha1hash": "79dc7e0a2c7b80ce7f584678a5222994ed174de7",
+                    "size": 80398,
+                    "uploadId": "R43Y4wAU2YXWxGd5bK7E2NGxKFrmjszb",
+                    "url": "https://cdn.sanity.io/images/9kpbh8wj/production/79dc7e0a2c7b80ce7f584678a5222994ed174de7-1280x1648.jpg",
+                    "_depth": 1
+                  }
+                }
+              },
+              "text": "Torin Shirt",
+              "url": "/products/torin-shirt"
+            }
+          ],
+          "menus": [
+            {
+              "_key": "a243352fa2da",
+              "links": [
+                {
+                  "_key": "3021f84c94cb",
+                  "text": "Harmon Tee",
+                  "url": "/products/harmon-tee"
+                },
+                {
+                  "_key": "508abbea1fcb",
+                  "text": "Gunther Jacket",
+                  "url": "/products/gunther-jacket"
+                }
+              ],
+              "text": "Clothing"
+            },
+            {
+              "_key": "a6870816b704",
+              "links": [
+                {
+                  "_key": "6f81a5cfc1f1",
+                  "text": "Hügel Backpack",
+                  "url": "/products/hugel-backpack"
+                },
+                {
+                  "_key": "fc931895548b",
+                  "text": "Go Time Briefcase",
+                  "url": "/products/go-time-briefcase"
+                }
+              ],
+              "text": "Accessories"
+            }
+          ],
+          "text": "Mens"
+        },
+        {
+          "_key": "ed2e341309e1",
+          "_type": "link",
+          "text": "About",
+          "url": "/pages/about"
+        },
+        {
+          "_key": "b982e2b8e5f1",
+          "_type": "link",
+          "text": "Contact",
+          "url": "/pages/contact"
+        }
+      ]
+    },
+    "promo": {
+      "text": "Get free delivery on orders over $100"
+    }
+  },
+  "handle": "component-header",
+  "indexedAt": 1641914798,
+  "locale": "en-US",
+  "nacelleEntryId": "aWQ6Ly9DVVNUT00vY3VzdG9tL2RlZmF1bHQvQ09OVEVOVC84MjVjZGRhOS01NzBlLTRlNTktYTBmNS03ZTQxOWQ4N2RiN2QvZW4tVVM=",
+  "published": true,
+  "sourceEntryId": "825cdda9-570e-4e59-a0f5-7e419d87db7d",
+  "title": "Header",
+  "updatedAt": 1635279537,
+  "type": "componentHeader"
+}

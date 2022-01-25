@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'HeaderComponent',
+  name: 'SiteHeader',
   props: {
     content: {
       type: Object,

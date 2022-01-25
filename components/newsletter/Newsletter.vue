@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'NewsletterComponent',
+  name: 'SiteNewsletter',
   props: {
     content: {
       type: Object,

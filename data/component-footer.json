@@ -1,0 +1,118 @@
+{
+  "createdAt": 1633457757,
+  "fields": {
+    "articleLists": null,
+    "featuredMedia": null,
+    "relatedArticles": null,
+    "description": null,
+    "tags": null,
+    "collectionHandle": null,
+    "content": null,
+    "contentHtml": null,
+    "excerpt": null,
+    "blogHandle": null,
+    "publishDate": null,
+    "author": null,
+    "primary": {
+      "navigation": [
+        {
+          "_key": "fa34bef7b1b7",
+          "links": [
+            {
+              "_key": "f8f38f80d991",
+              "text": "Clothing",
+              "url": "/collections/clothing"
+            },
+            {
+              "_key": "e6a7ec927fd4",
+              "text": "Footwear",
+              "url": "/collections/footwear"
+            },
+            {
+              "_key": "c3c317b67e34",
+              "text": "Bags",
+              "url": "/collections/bags"
+            },
+            {
+              "_key": "cdf915a4422a",
+              "text": "Browse All",
+              "url": "/collections/womens"
+            }
+          ],
+          "text": "Womens"
+        },
+        {
+          "_key": "b6337451873b",
+          "links": [
+            {
+              "_key": "8064fb828663",
+              "text": "Clothing",
+              "url": "/collections/clothing"
+            },
+            {
+              "_key": "327e6e913a35",
+              "text": "Footwear",
+              "url": "/collections/footwear"
+            },
+            {
+              "_key": "9a1840bcd366",
+              "text": "Eyewear",
+              "url": "/collections/eyewear"
+            },
+            {
+              "_key": "32824d2bf437",
+              "text": "Browse All",
+              "url": "/collections/mens"
+            }
+          ],
+          "text": "Mens"
+        },
+        {
+          "_key": "903732d5bc46",
+          "links": [
+            {
+              "_key": "864799ded09c",
+              "text": "About",
+              "url": "/pages/about"
+            },
+            {
+              "_key": "167665a7750f",
+              "text": "Contact",
+              "url": "/pages/contact"
+            }
+          ],
+          "text": "Company"
+        }
+      ]
+    },
+    "secondary": {
+      "copyright": "Nacelle, Inc. All rights reserved.",
+      "social": [
+        {
+          "_key": "a5c470d702ee",
+          "name": "facebook",
+          "url": "https://www.facebook.com/getnacelle/"
+        },
+        {
+          "_key": "f13047d75c37",
+          "name": "twitter",
+          "url": "https://twitter.com/getnacelle"
+        },
+        {
+          "_key": "36d2f45f2c15",
+          "name": "github",
+          "url": "https://github.com/getnacelle"
+        }
+      ]
+    }
+  },
+  "handle": "component-footer",
+  "indexedAt": 1641914794,
+  "locale": "en-US",
+  "nacelleEntryId": "aWQ6Ly9DVVNUT00vY3VzdG9tL2RlZmF1bHQvQ09OVEVOVC9iYTY5ZjY0NS02MDNjLTQ1MDQtOTNlYy1kYjhmNTFlNmIyNWMvZW4tVVM=",
+  "published": true,
+  "sourceEntryId": "ba69f645-603c-4504-93ec-db8f51e6b25c",
+  "title": "Footer",
+  "updatedAt": 1634683721,
+  "type": "componentFooter"
+}
