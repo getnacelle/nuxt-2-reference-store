@@ -1,7 +1,9 @@
 <template>
-  <button type="button" class="bg-white p-2 rounded-md text-gray-400 lg:hidden">
-    <!-- @click="setNavOpen(!navOpen)" -->
-
+  <button
+    type="button"
+    class="bg-white p-2 rounded-md text-gray-400 lg:hidden"
+    @click="setNavVisibility(!navVisible)"
+  >
     <span class="sr-only">Open menu</span>
     <svg
       class="h-6 w-6"
@@ -22,7 +24,15 @@
 </template>
 
 <script>
+import { mapGetters, mapMutations } from 'vuex';
+
 export default {
-  name: 'HeaderMenu'
+  name: 'HeaderMenu',
+  computed: {
+    ...mapGetters('ui', ['navVisible'])
+  },
+  methods: {
+    ...mapMutations('ui', ['setNavVisibility'])
+  }
 };
 </script>

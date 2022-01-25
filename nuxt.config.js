@@ -26,15 +26,11 @@ export default {
   plugins: ['~/plugins/nacelle-sdk.js', '~/plugins/nuxt-client-init.client.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: false,
 
   // Nuxt image component: https://image.nuxtjs.org/
   image: {
-    domains: [
-      'https://cdn.shopify.com',
-      'https://cdn.accentuate.io',
-      'https://images.ctfassets.net'
-    ]
+    domains: ['https://cdn.shopify.com', 'cdn.sanity.io']
   },
 
   publicRuntimeConfig: {
