@@ -8,10 +8,7 @@
         <header-primary :content="content.fields.primary" />
 
         <div class="ml-auto flex items-center">
-          <header-search
-            class="hidden lg:block"
-            :content="content.fields.search"
-          />
+          <search-input class="hidden lg:block" />
           <header-cart />
         </div>
       </div>
@@ -24,8 +21,8 @@ import HeaderPromo from './HeaderPromo.vue';
 import HeaderMenu from './HeaderMenu.vue';
 import HeaderLogo from './HeaderLogo.vue';
 import HeaderPrimary from './HeaderPrimary.vue';
-import HeaderSearch from './HeaderSearch.vue';
 import HeaderCart from './HeaderCart.vue';
+import SearchInput from '~/components/search/SearchInput.vue';
 
 export default {
   name: 'SiteHeader',
@@ -34,8 +31,8 @@ export default {
     HeaderMenu,
     HeaderLogo,
     HeaderPrimary,
-    HeaderSearch,
-    HeaderCart
+    HeaderCart,
+    SearchInput
   },
   props: {
     content: {

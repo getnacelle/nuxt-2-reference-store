@@ -28,7 +28,7 @@
           </svg>
         </button>
       </div>
-      <!-- <header-search /> -->
+      <search-input />
       <nav-tabs :content="content" />
       <nav-menu :content="content" />
     </div>
@@ -40,12 +40,14 @@ import { mapGetters, mapMutations } from 'vuex';
 
 import NavTabs from './NavTabs.vue';
 import NavMenu from './NavMenu.vue';
+import SearchInput from '~/components/search/SearchInput.vue';
 
 export default {
   name: 'NavDrawer',
   components: {
     NavTabs,
-    NavMenu
+    NavMenu,
+    SearchInput
   },
   props: {
     content: {

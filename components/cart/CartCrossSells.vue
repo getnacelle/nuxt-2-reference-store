@@ -14,7 +14,7 @@
         >
           <nuxt-img
             :src="crossSell.content.featuredMedia.src"
-            :alt="crossSell.content.featuredMedia.alt"
+            :alt="crossSell.content.featuredMedia.altText"
             class="w-full h-full object-center object-cover"
           />
         </div>

@@ -25,7 +25,7 @@
                   <nuxt-picture
                     class="picture"
                     :src="callout.image.file.asset.url"
-                    :alt="callout.image.alt"
+                    :alt="callout.image.altText"
                     quality="80"
                     sizes="lg:136px xl:25vw"
                   />

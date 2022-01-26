@@ -5,7 +5,7 @@
     >
       <nuxt-img
         :src="item.featuredMedia.src"
-        :alt="item.featuredMedia.alt"
+        :alt="item.featuredMedia.altText"
         class="w-full h-full object-center object-cover"
       />
     </div>

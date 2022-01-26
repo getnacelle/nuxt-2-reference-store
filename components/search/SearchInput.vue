@@ -34,11 +34,11 @@
           @focus="handleFocus(true)"
           @blur="handleFocus(false)"
         />
-        <!-- <search-autocomplete
+        <search-autocomplete
           v-if="query && isFocused"
           :results="results"
           :query="query"
-        /> -->
+        />
       </div>
     </div>
   </div>
@@ -46,13 +46,14 @@
 
 <script>
 import { mapGetters } from 'vuex';
-
+import SearchAutocomplete from '../search/SearchAutocomplete.vue';
 import { searchCatalog } from '~/utils/searchCatalog';
-// import SearchAutocomplete from '../search/SearchAutocomplete.vue';
 
 export default {
   name: 'HeaderSearch',
-  // components: { SearchAutocomplete },
+  components: {
+    SearchAutocomplete
+  },
   data: () => ({
     query: '',
     results: [],

@@ -45,7 +45,7 @@
           >
             <nuxt-img
               :src="callout.image.file.asset.url"
-              :alt="callout.image.alt"
+              :alt="callout.image.altText"
               class="object-center object-cover"
             />
           </div>

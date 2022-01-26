@@ -17,10 +17,20 @@ export const SITE_QUERY = `
     cart: content(filter: { handles: ["component-cart"] }){
       ${CONTENT_FRAGMENT}
     }
-    products: products{
+    catalog: products{
       nacelleEntryId
       content{
         handle
+        title
+        featuredMedia{
+          src
+          thumbnailSrc
+          altText
+        }
+      }
+      variants{
+        price
+        compareAtPrice
       }
     }
   }
