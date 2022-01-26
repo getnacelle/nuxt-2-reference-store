@@ -41,7 +41,7 @@ export const actions = {
       const checkoutClient = createShopifyCheckoutClient(this.$config.shopify);
       const cartItems = rootState.cart.lineItems.map((lineItem) => ({
         quantity: lineItem.quantity,
-        variantId: lineItem.variant.id
+        variantId: lineItem.variantId
       }));
       const checkoutData = await checkoutClient.process({ cartItems });
       await set('checkoutId', checkoutData.id);

@@ -27,7 +27,6 @@ export const mutations = {
     set('cart', state.lineItems);
   },
   addItem(state, payload) {
-    console.log('payload', payload);
     const index = state.lineItems.findIndex((lineItem) => {
       if (lineItem.variantId === payload.variantId) {
         return (
@@ -38,7 +37,7 @@ export const mutations = {
       return false;
     });
     if (index === -1) {
-      payload.variantId = `${payload.variantId}::${uuid()}`;
+      payload.id = `${payload.variantId}::${uuid()}`;
       state.lineItems.push(payload);
     } else {
       state.lineItems.splice(index, 1, {

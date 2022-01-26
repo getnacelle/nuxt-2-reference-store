@@ -42,7 +42,7 @@
 
             <div class="mt-8">
               <div class="flow-root">
-                <div v-if="cartItems.length">
+                <div v-show="cartItems.length">
                   <ul role="list" class="-my-6 divide-y divide-gray-200">
                     <cart-item
                       v-for="item in cartItems"
@@ -52,14 +52,17 @@
                     />
                   </ul>
                 </div>
-                <p v-else class="text-gray-400 text-center">
+                <p v-show="!cartItems.length" class="text-gray-400 text-center">
                   {{ content.fields.drawer.empty }}
                 </p>
                 <cart-cross-sells :content="content.fields.crosssells" />
               </div>
             </div>
           </div>
-          <!-- <cart-total v-if="cart.lineItems.length" /> -->
+          <cart-total
+            v-show="cartItems.length"
+            :content="content.fields.total"
+          />
         </div>
       </div>
     </transition>
@@ -71,14 +74,14 @@ import { mapGetters, mapMutations } from 'vuex';
 
 import CartItem from './CartItem.vue';
 import CartCrossSells from './CartCrossSells.vue';
-// import CartTotal from './CartTotal.vue';
+import CartTotal from './CartTotal.vue';
 
 export default {
   name: 'CartDrawer',
   components: {
     CartItem,
-    CartCrossSells
-    //   CartTotal
+    CartCrossSells,
+    CartTotal
   },
   props: {
     content: {
