@@ -30,7 +30,6 @@ export const SITE_QUERY = `
       }
       variants{
         price
-        compareAtPrice
       }
     }
   }
