@@ -12,7 +12,7 @@
                 id="slide-over-title"
                 class="text-lg font-medium text-gray-900"
               >
-                {{ content.heading }}
+                {{ content.fields.drawer.heading }}
               </h2>
               <div class="ml-3 h-7 flex items-center">
                 <button
@@ -42,19 +42,20 @@
 
             <div class="mt-8">
               <div class="flow-root">
-                <!-- <div v-if="cart.lineItems.length">
+                <div v-if="cartItems.length">
                   <ul role="list" class="-my-6 divide-y divide-gray-200">
                     <cart-item
-                      v-for="item in cart.lineItems"
+                      v-for="item in cartItems"
                       :key="item.id"
                       :item="item"
+                      :content="content.fields.item"
                     />
                   </ul>
-                </div> -->
-                <!-- <p v-else class="text-gray-400 text-center">
-                  {{ content.empty }}
+                </div>
+                <p v-else class="text-gray-400 text-center">
+                  {{ content.fields.drawer.empty }}
                 </p>
-                <cart-cross-sells /> -->
+                <cart-cross-sells :content="content.fields.crosssells" />
               </div>
             </div>
           </div>
@@ -67,17 +68,18 @@
 
 <script>
 import { mapGetters, mapMutations } from 'vuex';
-// import CartItem from './CartItem.vue';
-// import CartCrossSells from './CartCrossSells.vue';
+
+import CartItem from './CartItem.vue';
+import CartCrossSells from './CartCrossSells.vue';
 // import CartTotal from './CartTotal.vue';
 
 export default {
   name: 'CartDrawer',
-  // components: {
-  //   CartItem,
-  //   CartCrossSells,
-  //   CartTotal
-  // },
+  components: {
+    CartItem,
+    CartCrossSells
+    //   CartTotal
+  },
   props: {
     content: {
       type: Object,
@@ -85,6 +87,7 @@ export default {
     }
   },
   computed: {
+    ...mapGetters('cart', ['cartItems']),
     ...mapGetters('ui', ['cartVisible'])
   },
   methods: {

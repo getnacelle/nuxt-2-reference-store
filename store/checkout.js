@@ -1,6 +1,22 @@
 import { get, set, del } from 'idb-keyval';
 import createShopifyCheckoutClient from '@nacelle/shopify-checkout';
 
+export const state = () => ({
+  checkoutProcessing: false
+});
+
+export const getters = {
+  checkoutProcessing(state) {
+    return state.checkoutProcessing;
+  }
+};
+
+export const mutations = {
+  setCheckoutProcessing(state, payload) {
+    state.checkoutProcessing = payload;
+  }
+};
+
 export const actions = {
   async initCheckout({ commit }) {
     try {
@@ -19,7 +35,8 @@ export const actions = {
       console.error(err);
     }
   },
-  async processCheckout({ rootState }) {
+  async processCheckout({ rootState, commit }) {
+    commit('setCheckoutProcessing', true);
     try {
       const checkoutClient = createShopifyCheckoutClient(this.$config.shopify);
       const cartItems = rootState.cart.lineItems.map((lineItem) => ({
@@ -34,5 +51,6 @@ export const actions = {
     } catch (err) {
       console.error(err);
     }
+    commit('setCheckoutProcessing', false);
   }
 };
