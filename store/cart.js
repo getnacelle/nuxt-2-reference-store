@@ -7,12 +7,15 @@ export const state = () => ({
 });
 
 export const getters = {
+  cartItems(state) {
+    return state.lineItems;
+  },
   cartCount(state) {
     return state.lineItems.reduce((acc, item) => acc + item.quantity, 0);
   },
   cartSubtotal(state) {
     return state.lineItems.reduce(
-      (acc, item) => acc + item.variant.price * item.quantity,
+      (acc, item) => acc + item.price * item.quantity,
       0
     );
   }
@@ -25,7 +28,7 @@ export const mutations = {
   },
   addItem(state, payload) {
     const index = state.lineItems.findIndex((lineItem) => {
-      if (lineItem.variant.id === payload.variant.id) {
+      if (lineItem.variantId === payload.variantId) {
         return (
           JSON.stringify(payload.metafields) ===
           JSON.stringify(lineItem.metafields)
@@ -34,7 +37,7 @@ export const mutations = {
       return false;
     });
     if (index === -1) {
-      payload.id = `${payload.variant.id}::${uuid()}`;
+      payload.id = `${payload.variantId}::${uuid()}`;
       state.lineItems.push(payload);
     } else {
       state.lineItems.splice(index, 1, {

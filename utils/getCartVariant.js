@@ -4,19 +4,23 @@ export const getCartVariant = ({ product, variant }) => {
       handle: productHandle,
       title: productTitle,
       featuredMedia: productFeaturedMedia
-    } = product.content;
+    } = product.content || {};
     const { availableForSale, compareAtPrice, sourceEntryId, price, sku } =
       variant;
-    const { featuredMedia, selectedOptions, title } = variant.content;
+    const {
+      featuredMedia,
+      selectedOptions,
+      title: variantTitle
+    } = variant.content || {};
     return {
       availableForSale,
       compareAtPrice,
-      id: sourceEntryId,
+      variantId: sourceEntryId,
+      variantTitle,
       price,
       sku,
       featuredMedia: featuredMedia || productFeaturedMedia,
       selectedOptions,
-      title,
       productHandle,
       productTitle
     };
