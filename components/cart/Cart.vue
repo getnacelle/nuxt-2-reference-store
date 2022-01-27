@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapMutations } from 'vuex';
 
 import CartOverlay from './CartOverlay.vue';
 import CartDrawer from './CartDrawer.vue';
@@ -33,7 +33,20 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('ui', ['cartVisible'])
+    ...mapGetters('ui', ['cartVisible']),
+    ...mapGetters('cart', ['cartItems'])
+  },
+  watch: {
+    cartItems: {
+      handler() {
+        if (!this.cartVisible) {
+          this.setCartVisibility(true);
+        }
+      }
+    }
+  },
+  methods: {
+    ...mapMutations('ui', ['setCartVisibility'])
   }
 };
 </script>

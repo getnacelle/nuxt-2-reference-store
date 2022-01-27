@@ -1,10 +1,29 @@
 <template>
-  <div class="page">Page</div>
+  <div class="contentPage">
+    <site-section
+      v-for="section in page.fields.sections"
+      :key="section._key"
+      :content="section"
+    />
+  </div>
 </template>
 
 <script>
+import { CONTENT_PAGE_QUERY } from '~/queries/contentPage';
+import SiteSection from '~/components/section/Section.vue';
+
 export default {
-  name: "ContentPage",
+  name: 'ContentPage',
+  components: { SiteSection },
+  async asyncData({ app, params }) {
+    const { pages } = await app.$nacelle.query({
+      query: CONTENT_PAGE_QUERY,
+      variables: { handle: `page-${params.handle}` }
+    });
+    return {
+      page: pages[0]
+    };
+  }
 };
 </script>
 
