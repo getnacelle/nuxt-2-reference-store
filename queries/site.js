@@ -1,20 +1,21 @@
 const CONTENT_FRAGMENT = `
   nacelleEntryId
   handle
+  fields
 `;
 
 export const SITE_QUERY = `
   {
-    header: content(filter: { handles: ["component-header"] }){
+    header: content(filter: { type: "componentHeader", handles: ["component-header"] }){
       ${CONTENT_FRAGMENT}
     }
-    newsletter: content(filter: { handles: ["component-newsletter"] }){
+    newsletter: content(filter: { type: "componentNewsletter", handles: ["component-newsletter"] }){
       ${CONTENT_FRAGMENT}
     }
-    footer: content(filter: { handles: ["component-footer"] }){
+    footer: content(filter: { type: "componentFooter", handles: ["component-footer"] }){
       ${CONTENT_FRAGMENT}
     }
-    cart: content(filter: { handles: ["component-cart"] }){
+    cart: content(filter: { type: "componentCart",  handles: ["component-cart"] }){
       ${CONTENT_FRAGMENT}
     }
     catalog: products{

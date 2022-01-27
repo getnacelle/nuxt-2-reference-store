@@ -10,7 +10,7 @@
 </template>
 
 <script>
-// import { mapGetters } from 'vuex';
+import { mapGetters } from 'vuex';
 
 import SiteHeader from '~/components/header/Header.vue';
 import SiteNav from '~/components/nav/Nav.vue';
@@ -27,16 +27,8 @@ export default {
     SiteNewsletter,
     SiteFooter
   },
-  // computed: {
-  //   ...mapGetters('site', ['siteComponents'])
-  // },
-  data: () => ({
-    siteComponents: {
-      header: require('~/data/component-header.json'),
-      cart: require('~/data/component-cart.json'),
-      newsletter: require('~/data/component-newsletter.json'),
-      footer: require('~/data/component-footer.json')
-    }
-  })
+  computed: {
+    ...mapGetters('site', ['siteComponents'])
+  }
 };
 </script>

@@ -6,7 +6,7 @@ let fetchCount = 0;
 
 export const cachedFetch = async ({ key, fetcher }) => {
   fetchCount += 1;
-  let data = await cache.get(key);
+  let data = null;
   if (!data && fetchCount > 1) {
     await delay({ duration: 5000 });
     data = await cache.get(key);
