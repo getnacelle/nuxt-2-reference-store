@@ -42,8 +42,13 @@
       <h3 class="mt-4 text-sm text-gray-700">
         {{ product.content.title }}
       </h3>
-      <p v-if="price" class="mt-1 text-lg font-medium text-gray-900">
-        {{ price }}
+      <p class="mt-1 text-lg font-medium text-gray-900">
+        <span v-if="price" :class="compareAtPrice && 'text-red-600'">
+          {{ price }}
+        </span>
+        <span v-if="compareAtPrice" class="line-through">
+          {{ compareAtPrice }}
+        </span>
       </p>
     </div>
   </div>
@@ -77,7 +82,10 @@ export default {
       return optionsExist ? this.product?.content?.options : null;
     },
     price() {
-      return formatPrice({ price: this.product.variants[0].price });
+      return formatPrice({ price: this.selectedVariant.price });
+    },
+    compareAtPrice() {
+      return formatPrice({ price: this.selectedVariant.compareAtPrice });
     }
   },
   created() {
