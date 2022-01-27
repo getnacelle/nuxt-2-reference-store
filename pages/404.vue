@@ -1,10 +1,27 @@
 <template>
-  <div class="errorPage">Error</div>
+  <div class="errorPage">
+    <hero-banner :content="content" />
+  </div>
 </template>
 
 <script>
+import HeroBanner from '~/components/section/HeroBanner';
+
 export default {
-  name: 'ErrorPage'
+  name: 'ErrorPage',
+  components: {
+    HeroBanner
+  },
+  data: () => ({
+    content: {
+      heading: '404',
+      text: 'Uh oh!  The page you are looking for does not exist.',
+      button: {
+        url: '/',
+        text: 'Back to Homepage'
+      }
+    }
+  })
 };
 </script>
 
