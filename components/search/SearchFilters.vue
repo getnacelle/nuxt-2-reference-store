@@ -1,12 +1,13 @@
 <template>
   <div v-if="catalog.length">
     <h2 class="sr-only">Filters</h2>
-    <div class="hidden lg:block">
-      <form class="divide-y divide-gray-200 space-y-10">
-        <fieldset
-          v-for="filter in availableFilters"
-          :key="`${filter.type}-${filter.name}`"
-        >
+    <form class="hidden lg:block divide-y divide-gray-200 space-y-10">
+      <div
+        v-for="(filter, index) in availableFilters"
+        :key="`${filter.type}-${filter.name}`"
+        :class="index > 0 && 'pt-10'"
+      >
+        <fieldset>
           <legend class="block text-sm font-medium text-gray-900">
             {{ filter.name }}
           </legend>
@@ -39,8 +40,8 @@
             </div>
           </div>
         </fieldset>
-      </form>
-    </div>
+      </div>
+    </form>
   </div>
 </template>
 
