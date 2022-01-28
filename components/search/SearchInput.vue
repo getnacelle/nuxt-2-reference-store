@@ -77,7 +77,6 @@ export default {
     },
     handleEnter() {
       this.$router.push({ path: `/search?q=${this.query}` });
-      // search({ query: query.value });
     }
   }
 };

@@ -56,7 +56,7 @@
 <script>
 import { mapGetters, mapMutations } from 'vuex';
 
-import { PRODUCTS_QUERY } from '~/queries/products';
+import { PRODUCTS_QUERY } from '~/queries/product';
 import { formatPrice } from '~/utils/formatPrice';
 import { getCartVariant } from '~/utils/getCartVariant';
 

@@ -1,4 +1,4 @@
-import { PRODUCT_QUERY_FRAGMENT } from './products';
+import { PRODUCT_QUERY_FRAGMENT } from './product';
 
 export const COLLECTION_PRODUCTS_QUERY = `
   query CollectionProducts($handle: String!, $after: String!){

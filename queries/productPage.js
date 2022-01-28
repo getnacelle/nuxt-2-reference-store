@@ -1,3 +1,5 @@
+import { CONTENT_QUERY_FRAGMENT } from './content';
+
 export const PRODUCT_PAGE_QUERY = `
   query ProductPage($handle: String!){
     products: products(filter: { handles: [$handle] }){
@@ -38,10 +40,7 @@ export const PRODUCT_PAGE_QUERY = `
       }
     }
     pages: content(filter: { type: "productContent", handles: [$handle] }){
-      nacelleEntryId
-      sourceEntryId
-      handle
-      fields
+      ${CONTENT_QUERY_FRAGMENT}
     }
   }
 `;

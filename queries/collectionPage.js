@@ -1,4 +1,5 @@
-import { PRODUCT_QUERY_FRAGMENT } from './products';
+import { PRODUCT_QUERY_FRAGMENT } from './product';
+import { CONTENT_QUERY_FRAGMENT } from './content';
 
 export const COLLECTION_PAGE_QUERY = `
   query CollectionPage($handle: String!){
@@ -13,10 +14,7 @@ export const COLLECTION_PAGE_QUERY = `
       }
     }
     pages: content(filter: { type: "collectionContent", handles: [$handle] }){
-      nacelleEntryId
-      sourceEntryId
-      handle
-      fields
+      ${CONTENT_QUERY_FRAGMENT}
     }
   }
 `;
