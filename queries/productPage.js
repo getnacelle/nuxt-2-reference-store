@@ -10,9 +10,9 @@ export const PRODUCT_PAGE_QUERY = `
           name
           values
         }
-        featuredMedia{
+        media{
+          type
           src
-          thumbnailSrc
           altText
         }
       }

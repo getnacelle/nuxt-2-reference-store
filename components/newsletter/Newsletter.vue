@@ -22,10 +22,12 @@
           v-if="success"
           class="flex bg-green-50 mx-auto py-4 px-4 border border-2 border-green-300 rounded-lg sm:px-5 lg:px-6"
         >
+          <!-- eslint-disable vue/no-v-html -->
           <span
             class="text-green-500 mr-4 h-6 w-6"
             v-html="require(`~/assets/svgs/success.svg?raw`)"
           />
+          <!-- eslint-enable vue/no-v-html -->
           {{ content.fields.success }}
         </div>
         <form v-if="!success" class="sm:flex" @submit.prevent="handleSubmit">
