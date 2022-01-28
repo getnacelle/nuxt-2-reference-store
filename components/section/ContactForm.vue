@@ -5,10 +5,12 @@
         v-if="success"
         class="flex bg-green-50 mx-auto py-5 px-5 border border-2 border-green-300 rounded-lg sm:px-6 lg:px-7"
       >
+        <!-- eslint-disable vue/no-v-html -->
         <span
           class="text-green-500 mr-4 h-6 w-6"
           v-html="require(`~/assets/svgs/success.svg?raw`)"
         />
+        <!-- eslint-enable vue/no-v-html -->
         {{ content.success }}
       </div>
       <form

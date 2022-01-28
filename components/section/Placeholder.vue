@@ -3,10 +3,12 @@
     <div
       class="bg-red-50 max-w-3xl mx-auto border-4 border-red-300 border-dashed rounded-lg p-12 text-center"
     >
+      <!-- eslint-disable vue/no-v-html -->
       <span
         class="flex mx-auto text-red-500 mb-4 h-12 w-12"
         v-html="require(`~/assets/svgs/empty.svg?raw`)"
       />
+      <!-- eslint-enable vue/no-v-html -->
       <h1
         class="text-1xl leading-10 font-extrabold tracking-tight text-gray-900 text-center sm:text-2xl sm:leading-none lg:text-3xl"
       >

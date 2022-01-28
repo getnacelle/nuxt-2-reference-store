@@ -1,7 +1,7 @@
 <template>
   <div class="contentPage">
     <site-section
-      v-for="section in page.fields.sections"
+      v-for="section in sections"
       :key="section._key"
       :content="section"
     />
@@ -23,6 +23,11 @@ export default {
     return {
       page: pages[0]
     };
+  },
+  computed: {
+    sections() {
+      return this.page?.fields.sections;
+    }
   }
 };
 </script>
