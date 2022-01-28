@@ -1,5 +1,4 @@
 import { CONTENT_QUERY_FRAGMENT } from './content';
-import { PRODUCT_QUERY_FRAGMENT } from './product';
 
 export const SITE_QUERY = `
   {
@@ -16,7 +15,20 @@ export const SITE_QUERY = `
       ${CONTENT_QUERY_FRAGMENT}
     }
     catalog: products{
-      ${PRODUCT_QUERY_FRAGMENT}
+      nacelleEntryId
+      content{
+        handle
+        title
+        featuredMedia{
+          src
+          thumbnailSrc
+          altText
+        }
+      }
+      variants{
+        price
+        compareAtPrice
+      }
     }
   }
 `;

@@ -37,13 +37,14 @@
           </div>
         </div>
       </div>
-      <search-results :catalog="siteCatalog" :query="query" />
+      <search-results :catalog="products" :query="query" />
     </div>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { SEARCH_PAGE_QUERY } from '~/queries/searchPage';
+
 import SearchResults from '~/components/search/SearchResults.vue';
 
 export default {
@@ -51,12 +52,17 @@ export default {
   components: {
     SearchResults
   },
+  async asyncData({ app }) {
+    const { products } = await app.$nacelle.query({
+      query: SEARCH_PAGE_QUERY
+    });
+    return {
+      products
+    };
+  },
   data: () => ({
     query: ''
   }),
-  computed: {
-    ...mapGetters('site', ['siteCatalog'])
-  },
   watch: {
     query: {
       handler(value) {
