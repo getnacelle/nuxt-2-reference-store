@@ -2,6 +2,7 @@ import { cachedFetch } from '~/utils/cachedFetch';
 import { SITE_QUERY } from '~/queries/site';
 
 export const state = () => ({
+  space: {},
   components: {
     header: null,
     cart: null,
@@ -12,6 +13,14 @@ export const state = () => ({
 });
 
 export const getters = {
+  siteSpace(state) {
+    return state.space;
+  },
+  siteMetatags(state) {
+    return state.space.properties.find(
+      (property) => property.namespace === 'metatag'
+    )?.items;
+  },
   siteComponents(state) {
     return state.components;
   },
@@ -21,6 +30,9 @@ export const getters = {
 };
 
 export const mutations = {
+  setSpace(state, payload) {
+    state.space = { ...payload };
+  },
   setComponents(state, payload) {
     state.components = {
       header: payload.header[0],
@@ -40,7 +52,8 @@ export const actions = {
       key: 'site',
       fetcher: () => this.$nacelle.query({ query: SITE_QUERY })
     });
-    const { catalog, ...rest } = data;
+    const { space, catalog, ...rest } = data;
+    commit('setSpace', space);
     commit('setComponents', rest);
     commit('setCatalog', catalog);
   }

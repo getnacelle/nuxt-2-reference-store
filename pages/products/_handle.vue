@@ -11,6 +11,7 @@
 
 <script>
 import { PRODUCT_PAGE_QUERY } from '~/queries/productPage';
+import { buildMeta } from '~/utils/buildMeta';
 
 import ProductBuyBox from '~/components/product/ProductBuyBox.vue';
 import SiteSection from '~/components/section/Section.vue';
@@ -30,6 +31,9 @@ export default {
       product: products[0],
       page: pages[0]
     };
+  },
+  head() {
+    return buildMeta({ product: this.product });
   },
   computed: {
     sections() {
