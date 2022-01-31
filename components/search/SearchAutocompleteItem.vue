@@ -20,7 +20,14 @@
           <h3>
             {{ item.content.title }}
           </h3>
-          <p v-if="price" class="ml-4">{{ price }}</p>
+          <p class="ml-4">
+            <span v-if="price" :class="compareAtPrice && 'text-red-600'">
+              {{ price }}
+            </span>
+            <span v-if="compareAtPrice" class="line-through">
+              {{ compareAtPrice }}
+            </span>
+          </p>
         </div>
       </div>
     </div>
@@ -41,6 +48,9 @@ export default {
   computed: {
     price() {
       return formatPrice({ price: this.item.variants[0].price });
+    },
+    compareAtPrice() {
+      return formatPrice({ price: this.item.variants[0].compareAtPrice });
     }
   }
 };

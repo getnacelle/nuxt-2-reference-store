@@ -2,6 +2,7 @@ export const PRODUCT_QUERY_FRAGMENT = `
 nacelleEntryId
 sourceEntryId
 availableForSale
+productType
 content{
   handle
   title

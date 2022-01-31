@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import { PRODUCTS_QUERY } from '~/queries/products';
+import { PRODUCTS_QUERY } from '~/queries/product';
 import ProductCard from '~/components/product/ProductCard.vue';
 
 export default {
