@@ -6,6 +6,7 @@
 
 <script>
 import HeroBanner from '~/components/section/HeroBanner';
+import { buildMeta } from '~/utils/buildMeta';
 
 export default {
   name: 'ErrorPage',
@@ -21,7 +22,10 @@ export default {
         text: 'Back to Homepage'
       }
     }
-  })
+  }),
+  head() {
+    return buildMeta({ route: this.$route });
+  }
 };
 </script>
 

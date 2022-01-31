@@ -44,6 +44,7 @@
 
 <script>
 import { SEARCH_PAGE_QUERY } from '~/queries/searchPage';
+import { buildMeta } from '~/utils/buildMeta';
 
 import SearchResults from '~/components/search/SearchResults.vue';
 
@@ -63,6 +64,9 @@ export default {
   data: () => ({
     query: ''
   }),
+  head() {
+    return buildMeta({ route: this.$route });
+  },
   watch: {
     query: {
       handler(value) {
