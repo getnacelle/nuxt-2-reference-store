@@ -2,6 +2,15 @@ import { CONTENT_QUERY_FRAGMENT } from './content';
 
 export const SITE_QUERY = `
   {
+    space: spaceProperties{
+      properties{
+        namespace
+        items{
+          key
+          value
+        }
+      }
+    }
     header: content(filter: { type: "componentHeader", handles: ["component-header"] }){
       ${CONTENT_QUERY_FRAGMENT}
     }

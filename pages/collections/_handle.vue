@@ -11,6 +11,7 @@
 
 <script>
 import { COLLECTION_PAGE_QUERY } from '~/queries/collectionPage';
+import { buildMeta } from '~/utils/buildMeta';
 
 import CollectionGrid from '~/components/collection/CollectionGrid.vue';
 import SiteSection from '~/components/section/Section.vue';
@@ -30,6 +31,9 @@ export default {
       collection: collections[0],
       page: pages[0]
     };
+  },
+  head() {
+    return buildMeta({ collection: this.collection });
   },
   computed: {
     sections() {

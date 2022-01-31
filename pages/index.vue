@@ -10,6 +10,8 @@
 
 <script>
 import { CONTENT_PAGE_QUERY } from '~/queries/contentPage';
+import { buildMeta } from '~/utils/buildMeta';
+
 import SiteSection from '~/components/section/Section.vue';
 
 export default {
@@ -23,6 +25,9 @@ export default {
     return {
       page: pages[0]
     };
+  },
+  head() {
+    return buildMeta({ route: this.$route });
   },
   computed: {
     sections() {

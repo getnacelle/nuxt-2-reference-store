@@ -11,6 +11,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import { buildMeta } from '~/utils/buildMeta';
 
 import SiteHeader from '~/components/header/Header.vue';
 import SiteNav from '~/components/nav/Nav.vue';
@@ -27,8 +28,11 @@ export default {
     SiteNewsletter,
     SiteFooter
   },
+  head() {
+    return buildMeta({ metatags: this.siteMetatags });
+  },
   computed: {
-    ...mapGetters('site', ['siteComponents'])
+    ...mapGetters('site', ['siteMetatags', 'siteComponents'])
   }
 };
 </script>
